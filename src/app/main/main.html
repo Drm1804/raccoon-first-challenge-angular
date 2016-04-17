@@ -1,81 +1,91 @@
-<h1>Main</h1>
+<div ng-controller="MainController as ctrl">
 
 
-<div id="root">
-  <div class="app container-fluid" data-reactid=".0">
-    <div class="row" data-reactid=".0.0">
-      <div class="col-sm-12" data-reactid=".0.0.0">
-        <div class="searchbar form-group" data-reactid=".0.0.0.0">
-          <input value="" type="text" class="form-control" placeholder="Search people by name..." data-reactid=".0.0.0.0.0"></div>
-      </div>
-    </div>
-    <div class="row" data-reactid=".0.1">
-      <div class="col-sm-12" data-reactid=".0.1.0">
-        <div class="toolbar" data-reactid=".0.1.0.0">
-          <button class="btn btn-default" data-reactid=".0.1.0.0.0">
-            <i class="icon fa fa-sort-alpha-asc" data-reactid=".0.1.0.0.0.0"></i>
-            <span data-reactid=".0.1.0.0.0.1">  Sort by name</span>
-          </button>
-          <button class="btn btn-default" data-reactid=".0.1.0.0.1">
-            <i class="icon fa fa-sort-numeric-desc" data-reactid=".0.1.0.0.1.0"></i>
-            <span data-reactid=".0.1.0.0.1.1">  Sort by age</span>
-          </button>
+  <h1>Main</h1>
+
+
+  <div id="root">
+    <div class="app container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="searchbar form-group">
+            <input value="" type="text" class="form-control" placeholder="Search people by name..."></div>
         </div>
       </div>
-    </div>
-    <div class="row" data-reactid=".0.2">
-      <div class="col-sm-4 col-md-3 col-lg-2" data-reactid=".0.2.0">
-        <div class="thumbnail" data-reactid=".0.2.0.0"><img src="images/koala.svg" data-reactid=".0.2.0.0.0">
-
-          <div class="thumbnail-caption" data-reactid=".0.2.0.0.1"><h3 data-reactid=".0.2.0.0.1.0">Winnie Bridges</h3>
-            <table class="user-info table table-responsive" data-reactid=".0.2.0.0.1.1">
-              <tbody data-reactid=".0.2.0.0.1.1.0">
-              <tr data-reactid=".0.2.0.0.1.1.0.0">
-                <td data-reactid=".0.2.0.0.1.1.0.0.0">Age:</td>
-                <td data-reactid=".0.2.0.0.1.1.0.0.1">56</td>
-              </tr>
-              <tr data-reactid=".0.2.0.0.1.1.0.1">
-                <td data-reactid=".0.2.0.0.1.1.0.1.0">Favorite animal:</td>
-                <td data-reactid=".0.2.0.0.1.1.0.1.1">koala</td>
-              </tr>
-              <tr data-reactid=".0.2.0.0.1.1.0.2">
-                <td data-reactid=".0.2.0.0.1.1.0.2.0">Phone:</td>
-                <td data-reactid=".0.2.0.0.1.1.0.2.1"><span data-reactid=".0.2.0.0.1.1.0.2.1.0">8 </span><span
-                  data-reactid=".0.2.0.0.1.1.0.2.1.1">(324) 537-8589</span></td>
-              </tr>
-              </tbody>
-            </table>
-            <p data-reactid=".0.2.0.0.1.2"><b data-reactid=".0.2.0.0.1.2.0">Favorite phrase:</b><span
-              data-reactid=".0.2.0.0.1.2.1"> </span><span data-reactid=".0.2.0.0.1.2.2">Voalulat osunad pe zuzubesu vur size lefope orvo leukiono rat odelagum cose mudube sutja usipu.</span>
-            </p></div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="toolbar">
+            <button class="btn btn-default">
+              <i class="icon fa fa-sort-alpha-asc"></i>
+              <span>Sort by name</span>
+            </button>
+            <button class="btn btn-default">
+              <i class="icon fa fa-sort-numeric-desc"></i>
+              <span>Sort by age</span>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="col-sm-8 col-md-9 col-lg-10" data-reactid=".0.2.1">
-        <table class=" user-list table table-striped" data-reactid=".0.2.1.0">
-          <thead data-reactid=".0.2.1.0.0">
-          <tr data-reactid=".0.2.1.0.0.0">
-            <th data-reactid=".0.2.1.0.0.0.0">Image</th>
-            <th data-reactid=".0.2.1.0.0.0.1">Name</th>
-            <th data-reactid=".0.2.1.0.0.0.2">Age</th>
-            <th data-reactid=".0.2.1.0.0.0.3">Phone</th>
-          </tr>
-          </thead>
-          <tbody data-reactid=".0.2.1.0.1">
-          <tr data-reactid=".0.2.1.0.1.$user-0">
-            <td data-reactid=".0.2.1.0.1.$user-0.0">
-              <img src="images/raccoon.svg" class="user-image"
-                   data-reactid=".0.2.1.0.1.$user-0.0.0"></td>
-            <td data-reactid=".0.2.1.0.1.$user-0.1">Zachary Tucker</td>
-            <td data-reactid=".0.2.1.0.1.$user-0.2">21</td>
-            <td data-reactid=".0.2.1.0.1.$user-0.3">
-              <span data-reactid=".0.2.1.0.1.$user-0.3.0">8 </span><span
-              data-reactid=".0.2.1.0.1.$user-0.3.1">(714) 385-2465</span>
-            </td>
-          </tr>
+      <div class="row">
+        <div class="col-sm-4 col-md-3 col-lg-2">
+          <div class="thumbnail" data-reactid=".0.2.0.0"><img src="img/koala.svg" data-reactid=".0.2.0.0.0">
 
-          </tbody>
-        </table>
+            <div class="thumbnail-caption" data-reactid=".0.2.0.0.1"><h3 data-reactid=".0.2.0.0.1.0">Winnie Bridges</h3>
+              <table class="user-info table table-responsive" data-reactid=".0.2.0.0.1.1">
+                <tbody data-reactid=".0.2.0.0.1.1.0">
+                <tr>
+                  <td>Age:</td>
+                  <td>56</td>
+                </tr>
+                <tr >
+                  <td>Favorite animal:</td>
+                  <td>koala</td>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>
+                    <span>8</span>
+                    <span>(324) 537-8589</span>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+              <p>
+                <b>Favorite phrase:</b>
+                <span></span>
+                <span>Voalulat osunad pe zuzubesu vur size lefope orvo leukiono rat odelagum cose mudube sutja usipu.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-9 col-lg-10" data-reactid=".0.2.1">
+          <table class=" user-list table table-striped" data-reactid=".0.2.1.0">
+            <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Phone</th>
+            </tr>
+            </thead>
+            <tbody >
+            <tr ng-repeat="item in ctrl.data | orderBy: sort : ctrl.sortDesc">
+              <td>
+                <img src="img/{{item.image}}.svg" class="user-image">
+              </td>
+              <td>{{item.name}}</td>
+              <td>{{item.age}}</td>
+              <td>
+                <span>8</span>
+                <span>{{item.phone}}</span>
+              </td>
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
