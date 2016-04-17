@@ -1,34 +1,81 @@
-<div class="container">
+<h1>Main</h1>
 
-  <div>
-    <acme-navbar creation-date="main.creationDate"></acme-navbar>
-  </div>
 
-  <div class="jumbotron text-center">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      Always a pleasure scaffolding your apps.
-    </p>
-    <p class="animated infinite" ng-class="main.classAnimation">
-      <button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>
-    </p>
-    <p>
-      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-    </p>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-      <div class="thumbnail">
-        <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-        <div class="caption">
-          <h3>{{ awesomeThing.title }}</h3>
-          <p>{{ awesomeThing.description }}</p>
-          <p><a ng-href="{{awesomeThing.url}}">{{ awesomeThing.url }}</a></p>
+<div id="root">
+  <div class="app container-fluid" data-reactid=".0">
+    <div class="row" data-reactid=".0.0">
+      <div class="col-sm-12" data-reactid=".0.0.0">
+        <div class="searchbar form-group" data-reactid=".0.0.0.0">
+          <input value="" type="text" class="form-control" placeholder="Search people by name..." data-reactid=".0.0.0.0.0"></div>
+      </div>
+    </div>
+    <div class="row" data-reactid=".0.1">
+      <div class="col-sm-12" data-reactid=".0.1.0">
+        <div class="toolbar" data-reactid=".0.1.0.0">
+          <button class="btn btn-default" data-reactid=".0.1.0.0.0">
+            <i class="icon fa fa-sort-alpha-asc" data-reactid=".0.1.0.0.0.0"></i>
+            <span data-reactid=".0.1.0.0.0.1">  Sort by name</span>
+          </button>
+          <button class="btn btn-default" data-reactid=".0.1.0.0.1">
+            <i class="icon fa fa-sort-numeric-desc" data-reactid=".0.1.0.0.1.0"></i>
+            <span data-reactid=".0.1.0.0.1.1">  Sort by age</span>
+          </button>
         </div>
       </div>
     </div>
-  </div>
+    <div class="row" data-reactid=".0.2">
+      <div class="col-sm-4 col-md-3 col-lg-2" data-reactid=".0.2.0">
+        <div class="thumbnail" data-reactid=".0.2.0.0"><img src="images/koala.svg" data-reactid=".0.2.0.0.0">
 
+          <div class="thumbnail-caption" data-reactid=".0.2.0.0.1"><h3 data-reactid=".0.2.0.0.1.0">Winnie Bridges</h3>
+            <table class="user-info table table-responsive" data-reactid=".0.2.0.0.1.1">
+              <tbody data-reactid=".0.2.0.0.1.1.0">
+              <tr data-reactid=".0.2.0.0.1.1.0.0">
+                <td data-reactid=".0.2.0.0.1.1.0.0.0">Age:</td>
+                <td data-reactid=".0.2.0.0.1.1.0.0.1">56</td>
+              </tr>
+              <tr data-reactid=".0.2.0.0.1.1.0.1">
+                <td data-reactid=".0.2.0.0.1.1.0.1.0">Favorite animal:</td>
+                <td data-reactid=".0.2.0.0.1.1.0.1.1">koala</td>
+              </tr>
+              <tr data-reactid=".0.2.0.0.1.1.0.2">
+                <td data-reactid=".0.2.0.0.1.1.0.2.0">Phone:</td>
+                <td data-reactid=".0.2.0.0.1.1.0.2.1"><span data-reactid=".0.2.0.0.1.1.0.2.1.0">8 </span><span
+                  data-reactid=".0.2.0.0.1.1.0.2.1.1">(324) 537-8589</span></td>
+              </tr>
+              </tbody>
+            </table>
+            <p data-reactid=".0.2.0.0.1.2"><b data-reactid=".0.2.0.0.1.2.0">Favorite phrase:</b><span
+              data-reactid=".0.2.0.0.1.2.1"> </span><span data-reactid=".0.2.0.0.1.2.2">Voalulat osunad pe zuzubesu vur size lefope orvo leukiono rat odelagum cose mudube sutja usipu.</span>
+            </p></div>
+        </div>
+      </div>
+      <div class="col-sm-8 col-md-9 col-lg-10" data-reactid=".0.2.1">
+        <table class=" user-list table table-striped" data-reactid=".0.2.1.0">
+          <thead data-reactid=".0.2.1.0.0">
+          <tr data-reactid=".0.2.1.0.0.0">
+            <th data-reactid=".0.2.1.0.0.0.0">Image</th>
+            <th data-reactid=".0.2.1.0.0.0.1">Name</th>
+            <th data-reactid=".0.2.1.0.0.0.2">Age</th>
+            <th data-reactid=".0.2.1.0.0.0.3">Phone</th>
+          </tr>
+          </thead>
+          <tbody data-reactid=".0.2.1.0.1">
+          <tr data-reactid=".0.2.1.0.1.$user-0">
+            <td data-reactid=".0.2.1.0.1.$user-0.0">
+              <img src="images/raccoon.svg" class="user-image"
+                   data-reactid=".0.2.1.0.1.$user-0.0.0"></td>
+            <td data-reactid=".0.2.1.0.1.$user-0.1">Zachary Tucker</td>
+            <td data-reactid=".0.2.1.0.1.$user-0.2">21</td>
+            <td data-reactid=".0.2.1.0.1.$user-0.3">
+              <span data-reactid=".0.2.1.0.1.$user-0.3.0">8 </span><span
+              data-reactid=".0.2.1.0.1.$user-0.3.1">(714) 385-2465</span>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
