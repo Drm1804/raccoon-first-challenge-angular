@@ -5,9 +5,9 @@
     .controller('MainController', MainController);
 
 
-  MainController.$inject = ['$main', '$rootScope'];
+  MainController.$inject = ['$main', '$scope', '$timeout'];
 
-  function MainController($main, $rootScope) {
+  function MainController($main, $scope, $timeout) {
 
     var vm = this;
     vm.data = [];
@@ -19,9 +19,6 @@
     vm.getData = getData;
     vm.getData();
 
-    $rootScope.$on('fistElement', function(ev, data){
-      vm.checkPeople = data;
-    });
 
 
     function getData() {
@@ -54,6 +51,10 @@
     function changeMainPeople(item) {
       vm.checkPeople = item
     }
+
+    $scope.$watch('sortedResult', function() {
+      vm.checkPeople = $scope.sortedResult[0];
+    });
 
   }
 })();

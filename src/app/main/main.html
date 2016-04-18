@@ -1,7 +1,13 @@
 <div ng-controller="MainController as ctrl">
 
 
-  <h1>Main</h1>
+  <div class="container-fluid rc-intro">
+    <div class="container">
+      <img class="rc-img" src="img/angular.png" alt="">
+      <h1 class="rc-title">React Challenge (Angular version)</h1>
+      <p class="rc-description">Поиск и сортировка данных</p>
+    </div>
+  </div>
 
 
   <div id="root">
@@ -70,7 +76,7 @@
             </tr>
             </thead>
             <tbody >
-            <tr ng-repeat="item in ctrl.data | orderBy: ctrl.sort : ctrl.sortDesc | filter: ctrl.query | getSortedData" ng-click="ctrl.changeMainPeople(item)">
+            <tr ng-repeat="item in ctrl.data | orderBy: ctrl.sort : ctrl.sortDesc | filter: ctrl.query as sortedResult" ng-click="ctrl.changeMainPeople(item)">
               <td>
                 <img src="img/{{item.image}}.svg" class="user-image">
               </td>
