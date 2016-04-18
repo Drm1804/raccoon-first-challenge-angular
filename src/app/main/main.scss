@@ -5,3 +5,8 @@
 .thumbnail{
   height:auto;
 }
+.user-list tbody tr:hover{
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color .1s;
+}

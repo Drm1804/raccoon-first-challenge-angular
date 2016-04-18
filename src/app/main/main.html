@@ -28,24 +28,25 @@
       </div>
       <div class="row">
         <div class="col-sm-4 col-md-3 col-lg-2">
-          <div class="thumbnail" data-reactid=".0.2.0.0"><img src="img/koala.svg" data-reactid=".0.2.0.0.0">
+          <div class="thumbnail"><img src="img/{{ctrl.checkPeople.image}}.svg">
 
-            <div class="thumbnail-caption" data-reactid=".0.2.0.0.1"><h3 data-reactid=".0.2.0.0.1.0">Winnie Bridges</h3>
-              <table class="user-info table table-responsive" data-reactid=".0.2.0.0.1.1">
-                <tbody data-reactid=".0.2.0.0.1.1.0">
+            <div class="thumbnail-caption">
+              <h3>{{ctrl.checkPeople.name}}</h3>
+              <table class="user-info table table-responsive ">
+                <tbody>
                 <tr>
                   <td>Age:</td>
-                  <td>56</td>
+                  <td>{{ctrl.checkPeople.age}}</td>
                 </tr>
                 <tr >
                   <td>Favorite animal:</td>
-                  <td>koala</td>
+                  <td>{{ctrl.checkPeople.image}}</td>
                 </tr>
                 <tr>
                   <td>Phone:</td>
                   <td>
                     <span>8</span>
-                    <span>(324) 537-8589</span>
+                    <span>{{ctrl.checkPeople.phone}}</span>
                   </td>
                 </tr>
                 </tbody>
@@ -53,13 +54,13 @@
               <p>
                 <b>Favorite phrase:</b>
                 <span></span>
-                <span>Voalulat osunad pe zuzubesu vur size lefope orvo leukiono rat odelagum cose mudube sutja usipu.</span>
+                <span>{{ctrl.checkPeople.phrase}}</span>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-8 col-md-9 col-lg-10" data-reactid=".0.2.1">
-          <table class=" user-list table table-striped" data-reactid=".0.2.1.0">
+        <div class="col-sm-8 col-md-9 col-lg-10">
+          <table class=" user-list table table-striped">
             <thead>
             <tr>
               <th>Image</th>
@@ -69,7 +70,7 @@
             </tr>
             </thead>
             <tbody >
-            <tr ng-repeat="item in ctrl.data | orderBy: ctrl.sort : ctrl.sortDesc | filter: ctrl.query">
+            <tr ng-repeat="item in ctrl.data | orderBy: ctrl.sort : ctrl.sortDesc | filter: ctrl.query | getSortedData" ng-click="ctrl.changeMainPeople(item)">
               <td>
                 <img src="img/{{item.image}}.svg" class="user-image">
               </td>
